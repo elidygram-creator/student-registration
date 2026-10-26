@@ -1,0 +1,187 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f3f6fc;
+  color: #1e293b;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.header {
+  background: linear-gradient(135deg, #123c8c, #2878df);
+  color: white;
+  text-align: center;
+  padding: 45px 20px;
+}
+
+.subtitle {
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+.header h1 {
+  font-size: clamp(25px, 4vw, 38px);
+  margin: 15px 0;
+}
+
+.header p:last-child {
+  color: #e0f9ff;
+}
+
+.welcome {
+  max-width: 1100px;
+  margin: 25px auto 0;
+  padding: 15px 20px;
+  background: #e0f2fe;
+  border-left: 5px solid #0284c7;
+  border-radius: 8px;
+  color: #075985;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.4fr);
+  gap: 25px;
+  align-items: start;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 5px 25px rgba(15, 23, 42, 0.07);
+  min-width: 0;
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 22px;
+}
+
+.description {
+  color: #64748b;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+label {
+  display: block;
+  margin: 18px 0 8px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+input {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  outline: none;
+  background: white;
+  color: #1e293b;
+}
+
+input:focus {
+  border-color: #2878df;
+  box-shadow: 0 0 0 3px rgba(40, 120, 223, 0.12);
+}
+
+.register-button {
+  width: 100%;
+  margin-top: 25px;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.register-button:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+.student-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 14px;
+}
+
+th,
+td {
+  padding: 13px 10px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+  background: #f1f5f9;
+  color: #334155;
+}
+
+.empty {
+  text-align: center;
+  padding: 25px 5px;
+  color: #64748b;
+}
+
+.delete-button {
+  border: none;
+  background: #fee2e2;
+  color: #b91c1c;
+  border-radius: 6px;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background: #fecaca;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #64748b;
+  font-size: 13px;
+}
+
+@media (max-width: 800px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .welcome {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
